@@ -3,6 +3,7 @@ package figures;
 public class Circulo
 {
 	private int radi;
+	private static final double PI = Math.PI;
 
 	public Circulo(int radi) throws Exception
 	{
@@ -16,6 +17,17 @@ public class Circulo
 		}
 	}
 
+	public double areaCirculo()
+	{
+		return Math.pow(this.radi, 2)*PI;
+	}
+	
+	public double perimetroCirculo()
+	{
+		return 2*PI*this.radi;
+	}
+	
+	
 	public int getRadi() {
 		return radi;
 	}
@@ -31,6 +43,5 @@ public class Circulo
 			this.radi = radi;
 		}
 	}
-
 
 }
